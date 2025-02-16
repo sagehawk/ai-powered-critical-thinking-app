@@ -1,0 +1,7 @@
+/* src/components/common/Button.css */
+button {
+    background-color: lightblue;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
