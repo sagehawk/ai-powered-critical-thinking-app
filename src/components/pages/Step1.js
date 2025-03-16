@@ -1,6 +1,6 @@
 // src/components/pages/Step1.js
 import React, { useState } from 'react';
-import './Step1.css'; // Import CSS for styling
+// Remove this line: import './Step1.css';
 
 function Step1() {
   const [goal, setGoal] = useState(''); // State for the user's writing goal
