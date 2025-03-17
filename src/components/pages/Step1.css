@@ -1,0 +1,40 @@
+/* src/components/pages/Step1.css */
+.step1-container {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.goal-input, .workspace-input, .time-management-input {
+    margin-bottom: 20px;
+}
+
+.goal-input label, .workspace-input label, .time-management-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.goal-input textarea, .workspace-input textarea, .time-management-input textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.goal-display {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.goal-display h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}

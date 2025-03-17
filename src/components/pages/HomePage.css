@@ -1,0 +1,159 @@
+/* src/components/pages/HomePage.css */
+.homepage-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.essay-list {
+    margin: 30px 0;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.essay-list h3 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.essay-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.essay-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.essay-list li:last-child {
+    border-bottom: none;
+}
+
+.essay-list li a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+    flex-grow: 1;
+}
+
+.essay-list li a:hover {
+    text-decoration: underline;
+}
+
+.essay-step {
+    background: #e0e0e0;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.essay-completed {
+    background: #d4edda;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    color: #155724;
+}
+
+.no-essays {
+    text-align: center;
+    color: #666;
+    margin: 40px 0;
+}
+
+.new-essay-button {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.start-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #45a049;
+}
+
+.essay-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.essay-title {
+    cursor: pointer;
+    color: #0066cc;
+    font-weight: 500;
+    flex-grow: 1;
+}
+
+.essay-title:hover {
+    text-decoration: underline;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+.delete-confirmation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 100;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+.delete-confirmation p {
+    margin-bottom: 20px;
+}
+
+.delete-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.essay-list li {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.essay-list li:hover {
+    background-color: #f5f5f5;
+}

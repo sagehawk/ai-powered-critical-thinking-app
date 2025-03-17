@@ -1,7 +1,22 @@
 /* src/components/common/Button.css */
-button {
-    background-color: lightblue;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

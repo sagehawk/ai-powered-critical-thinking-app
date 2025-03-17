@@ -1,14 +1,49 @@
 /* src/App.css */
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
+.progress-container {
+  margin-bottom: 20px;
 }
 
-nav li {
-  display: inline-block;
-  margin: 0 10px;
+.progress-container label {
+  margin-right: 10px;
+}
+
+.step-select {
+  margin-bottom: 20px;
+}
+
+.step-select label {
+  margin-right: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.warning-message {
+  background-color: #ffcccc;
+  border: 1px solid red;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.localStorageClear {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.home-link {                /* Add styling for the home link */
+  display: block;               /* Make it a block-level element */
+  margin-bottom: 10px;        /* Add some spacing below */
+  text-decoration: none;       /* Remove underline */
+  color: blue;                  /* Set the color */
+  font-weight: bold;          /* Make it bold */
+}
+
+.home-link:hover {         /* Add hover effect */
+  color: darkblue;
 }
