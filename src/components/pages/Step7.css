@@ -1,0 +1,170 @@
+.step7-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.step7-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.paragraph-list {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 200px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+}
+
+.paragraph-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0; /* Remove padding from container */
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    user-select: none; /* Prevent text selection during drag */
+    transition: transform 0.1s, box-shadow 0.2s;
+}
+
+.paragraph-item:last-child {
+    margin-bottom: 0;
+}
+
+/* This maintains constant spacing even during drag */
+.dragging-active .paragraph-item {
+    margin-bottom: 10px;
+}
+
+.paragraph-item:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.paragraph-item.dragging {
+    opacity: 0.65;
+    transform: scale(1.01);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #f0f8ff;
+    outline: 2px dashed #007bff;
+    border-color: #007bff;
+    z-index: 10;
+}
+
+/* Drag handle */
+.drag-handle {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-right: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    color: #666;
+    flex-shrink: 0;
+}
+
+.paragraph-content {
+    flex-grow: 1;
+    padding: 15px;
+}
+
+/* Drop indicators */
+.paragraph-item.drop-before {
+    border-top: 3px solid #4CAF50;
+    margin-top: 10px;
+}
+
+.paragraph-item.drop-before::before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #4CAF50;
+    border-radius: 3px;
+}
+
+.paragraph-item.drop-after {
+    border-bottom: 3px solid #4CAF50;
+    margin-bottom: 7px;
+}
+
+.paragraph-item.drop-after::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #4CAF50;
+    border-radius: 3px;
+}
+
+.paragraph-item h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    color: #444;
+}
+
+.paragraph-item p {
+    margin: 0;
+    line-height: 1.5;
+    color: #333;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    flex: 1;
+    max-width: 150px;
+    font-weight: 500;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
+.button-container button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.empty-message {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 30px 0;
+}
+
+/* Animation for the drop target indicator */
+@keyframes pulse {
+    0% { opacity: 0.7; }
+    50% { opacity: 1; }
+    100% { opacity: 0.7; }
+}
+
+.paragraph-item.drop-before::before,
+.paragraph-item.drop-after::after {
+    animation: pulse 1.5s infinite ease-in-out;
+}

@@ -1,0 +1,33 @@
+/* src/components/pages/Step4.css */
+.step4-container {
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.step4-container h2 {
+    margin-bottom: 20px;
+}
+
+.outline-sentences ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.outline-sentences li {
+    margin-bottom: 10px;
+}
+
+.outline-sentences textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important for width to include padding */
+    resize: vertical; /* Allows vertical resizing */
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
